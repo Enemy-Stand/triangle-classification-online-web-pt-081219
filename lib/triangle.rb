@@ -19,7 +19,7 @@ class Triangle
   end
   
   def validate_triangle
-    real_triangle = length + width + length
+    real_triangle = [(length + width > height), (length + height > width), (width + height > length)]
   
   class TriangleError < StandardError
   end
