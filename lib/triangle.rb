@@ -8,6 +8,7 @@ class Triangle
   end
   
   def kind
+    validate_triangle
     if length == width && width == height && height == length
       return :equilateral
     elsif width < length && width < height && length == height
@@ -18,6 +19,9 @@ class Triangle
       raise TriangleError
     end
   end
+  
+  def validate_triangle
+    
   
   class TriangleError < StandardError
   end
