@@ -20,7 +20,7 @@ class Triangle
   
   def validate_triangle
     real_triangle = [(length + width > height), (length + height > width), (width + height > length)]
-    [length, width, height] 
+    [length, width, height].each do |side|
   
   class TriangleError < StandardError
   end
