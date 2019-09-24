@@ -11,7 +11,7 @@ class Triangle
     validate_triangle
     if length == width && width == height && height == length
       return :equilateral
-    elsif width < length && width < height && length == height
+    elsif length == width || width == height || height == length
       return :isosceles
     elsif length != width && width != height && height != length
       return :scalene
