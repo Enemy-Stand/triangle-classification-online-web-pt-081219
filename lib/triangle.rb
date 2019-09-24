@@ -15,8 +15,6 @@ class Triangle
       return :isosceles
     elsif length != width && width != height && height != length
       return :scalene
-    else
-      raise TriangleError
     end
   end
   
