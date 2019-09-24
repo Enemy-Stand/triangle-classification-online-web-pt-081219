@@ -12,5 +12,13 @@ class Triangle
       return :equilateral
     elsif width < length && width < height
       return :isosceles
-    elsif 
+    elsif length != width && width != height && height != length
+      return :scalene
+    else
+      raise TriangleError
+    end
+  end
+  
+  class TriangleError < StandardError
+  end
 end
