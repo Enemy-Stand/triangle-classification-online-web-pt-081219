@@ -22,7 +22,8 @@ class Triangle
     real_triangle = [(length + width > height), (length + height > width), (width + height > length)]
     [length, width, height].each do |side|
       real_triangle << false if side <= 0
-    raise TriangleError if real_triangle.include?(false)
+      raise TriangleError if real_triangle.include?(false)
+    end
   end
   
   class TriangleError < StandardError
