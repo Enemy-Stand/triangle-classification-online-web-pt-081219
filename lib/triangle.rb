@@ -8,5 +8,7 @@ class Triangle
   end
   
   def kind
-    
+    if length == width && width == height
+      return :equilateral
+    elsif 
 end
