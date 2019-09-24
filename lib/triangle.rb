@@ -10,7 +10,7 @@ class Triangle
   def kind
     if length == width && width == height && height == length
       return :equilateral
-    elsif width < length && width < height && length == width
+    elsif width < length && width < height && length == height
       return :isosceles
     elsif length != width && width != height && height != length
       return :scalene
